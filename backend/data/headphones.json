@@ -1,0 +1,40 @@
+{
+  "headphones": [
+    {
+      "id": "1",
+      "name": "Sony WH-1000XM4",
+      "brand": "Sony",
+      "price": 349.99,
+      "budget_range": "over-200",
+      "type": "over-ear",
+      "primary_use": "music",
+      "sound_profile": "balanced",
+      "features": ["Noise cancelling", "Bluetooth", "Multi-device pairing"],
+      "image_url": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&q=80&w=800"
+    },
+    {
+      "id": "2",
+      "name": "Apple AirPods Pro",
+      "brand": "Apple",
+      "price": 249.99,
+      "budget_range": "over-200",
+      "type": "in-ear",
+      "primary_use": "daily",
+      "sound_profile": "balanced",
+      "features": ["Active noise cancellation", "Spatial audio", "Water resistant"],
+      "image_url": "https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?auto=format&q=80&w=800"
+    },
+    {
+      "id": "3",
+      "name": "Jabra Elite 75t",
+      "brand": "Jabra",
+      "price": 149.99,
+      "budget_range": "100-200",
+      "type": "in-ear",
+      "primary_use": "sports",
+      "sound_profile": "bass",
+      "features": ["Water resistant", "Long battery life", "Compact design"],
+      "image_url": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&q=80&w=800"
+    }
+  ]
+}
