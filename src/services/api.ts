@@ -1,25 +1,13 @@
+import { Product } from "../types/product";
+
 const API_BASE_URL = 'http://localhost:8000/api';
 
-export interface HeadphonePreferences {
-  budget: string;
-  usage: string;
-  type: string;
-  soundQuality: string;
-}
-
-export interface Headphone {
-  id: string;
-  name: string;
-  brand: string;
-  price: number;
-  features: string[];
-  image_url: string;
-  match_score: number;
-}
-
-export async function getHeadphoneRecommendations(preferences: HeadphonePreferences): Promise<Headphone[]> {
+export async function getRecommendations(
+  category: string,
+  preferences: Record<string, string>
+): Promise<Product[]> {
   try {
-    const response = await fetch(`${API_BASE_URL}/recommendations/headphones`, {
+    const response = await fetch(`${API_BASE_URL}/recommendations/${category}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
